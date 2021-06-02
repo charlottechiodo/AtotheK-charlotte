@@ -105,13 +105,13 @@ var v = vehicles[i];
 v.behaviors();
 v.update();
 v.show();
-//textFont(font);
-//textAlign(RIGHT);
-//fill(255);
-//noStroke();
-//textSize(20);
-//text('move your mouse through the letters', 800, 215);
-//textFont(font);
+
+textAlign(RIGHT);
+fill(255);
+noStroke();
+textSize(20);
+text('move your mouse through the letters', 800, 215);
+textFont(font);
 //text(font.textToPoints('LALIQUE', 10, 450, 20)); //last is fontsize
 }
 }
