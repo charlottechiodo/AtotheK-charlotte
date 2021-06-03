@@ -104,7 +104,7 @@ textAlign(RIGHT);
 fill(255);
 noStroke();
 textSize(20);
-text('move your mouse through the letters', 800, 215);
+text('move your mouse through the letters', 750, 215);
 textFont(font);
 }
 }
