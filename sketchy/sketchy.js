@@ -48,8 +48,8 @@ Vehicle.prototype.arrive = function(target) {
   var desired = p5.Vector.sub(target, this.pos); //get a vector that points from position to target 
   var d = desired.mag();
   var speed = this.maxspeed;
-  if (d < 100) { //if distance < 100
-  speed = map(d, 0, 100, 0, this.maxspeed); //when distance = 0, mag = 0, when distance = 100, magnitude = maxspeed
+  if (d < 100) { //if distance is less than 100
+  speed = map(d, 0, 100, 0, this.maxspeed); //when distance is 0, mag is 0, when distance is 100, magnitude is maxspeed
   } 
   desired.setMag(speed); //magnitude
  var steer = p5.Vector.sub(desired, this.vel); //steering force, desired speed minus velocity
@@ -58,7 +58,7 @@ Vehicle.prototype.arrive = function(target) {
 };
 
 
-Vehicle.prototype.flee = function(target) { //the dots flee, move in away from mouse
+Vehicle.prototype.flee = function(target) { //THE DOTS FLEE, MOVE IN OPPOSITE DIRECTION OF MOUSE
   var desired = p5.Vector.sub(target, this.pos); //get a vector that points from position to target 
   var d = desired.mag();
   if (d < 50) {
@@ -99,12 +99,10 @@ var v = vehicles[i];
 v.behaviors();
 v.update();
 v.show();
-
-textAlign(RIGHT);
 fill(255);
 noStroke();
 textSize(20);
-text('move your mouse through the letters', 750, 215);
+text('move your mouse through the letters', 55, 215);
 textFont(font);
 }
 }
