@@ -18,7 +18,6 @@ function setup() {
   textSize(fontSize);
   //textSpacing(-fontSize/2);
   //textAlign(CENTER);
-  background(0);
   points_array = font.textToPoints('run your mouse over', width/3.8, height/7, fontSize, options);  
   for(let i = 0; i < points_array.length; i++) {
     let point = points_array[i];
@@ -30,8 +29,8 @@ function setup() {
 function draw() {
   clear();
   background(0);
-  rect(30,40);
-  fill(20);
+  rect(width/5,height/13, 850, 675);
+  fill(0);
  
   for(let i = 0; i < points1.length; i++) {
     let point = points1[i];
